@@ -155,15 +155,14 @@ export default function Page() {
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold bg-linear-to-br from-slate-800 to-slate-600 bg-clip-text text-transparent">
-            Hours of Service Logger
+            roadduty
           </h1>
           <p className="text-slate-600 text-lg">
             DOT-Compliant Driver Log Management
           </p>
         </div>
         <Card>
-          <CardHeader>
-          </CardHeader>
+          <CardHeader></CardHeader>
           <CardContent>
             <div className="space-y-8 p-4">
               <Alert className="bg-primary/5 border-primary/20">
