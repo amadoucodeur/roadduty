@@ -115,9 +115,9 @@ const HOSGraph = () => {
   const linePoints = generateLinePoints();
 
   return (
-    <div className="w-full p-6 bg-gradient-to-br from-slate-50 to-slate-100">
-      <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden mb-6">
-        <div className="bg-gradient-to-r from-slate-700 to-slate-600 p-6 text-white">
+    <div className="w-full p-6  from-slate-50 to-slate-100">
+      <div className="bg-white rounded-2xl shadow-sm border-slate-200 overflow-hidden mb-6">
+        <div className=" from-slate-700 to-slate-600 p-6 text-white">
           <h1 className="text-2xl font-bold mb-1">Driver's Daily Log</h1>
           <p className="text-slate-200 text-sm">
             Hours of Service Record - 24 Hour Period
@@ -155,7 +155,7 @@ const HOSGraph = () => {
             <label className="text-xs font-semibold text-slate-600 uppercase tracking-wide">
               Total Miles Today
             </label>
-            <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg p-4 border border-slate-200">
+            <div className=" from-slate-50 to-slate-100 rounded-lg p-4 border border-slate-200">
               <div className="text-4xl font-bold text-slate-700">
                 {logData.totalMiles}
               </div>
@@ -206,7 +206,7 @@ const HOSGraph = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-lg border border-slate-200 p-4 mb-6">
+      <div className="bg-white rounded-xl shadow-sm border-slate-200 p-4 mb-6">
         <div className="flex flex-wrap gap-6 justify-center">
           {statuses.map((status) => (
             <div key={status.id} className="flex items-center gap-2">
@@ -222,7 +222,7 @@ const HOSGraph = () => {
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
+      <div className="bg-white rounded-xl shadow-sm border-slate-200 overflow-hidden">
         <div className="overflow-x-auto">
           <svg
             width={labelWidth + gridWidth + 2}
@@ -402,7 +402,7 @@ const HOSGraph = () => {
         </div>
       </div>
 
-      <div className="mt-6 bg-white rounded-xl shadow-lg border border-slate-200 p-6">
+      <div className="mt-6 bg-white rounded-xl shadow-sm  border-slate-200 p-6">
         <h3 className="text-lg font-bold text-slate-900 mb-4">
           Total Hours Summary
         </h3>
@@ -410,7 +410,7 @@ const HOSGraph = () => {
           {statuses.map((status) => (
             <div
               key={status.id}
-              className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-lg p-4 border border-slate-200"
+              className=" from-slate-50 to-slate-100 rounded-lg p-4 border border-slate-200"
             >
               <div className="flex items-center gap-2 mb-2">
                 <div
@@ -433,7 +433,7 @@ const HOSGraph = () => {
         </div>
       </div>
 
-      <div className="mt-6 bg-white rounded-xl shadow-lg border border-slate-200 p-6">
+      <div className="mt-6 bg-white rounded-xl shadow-sm border-slate-200 p-6">
         <h3 className="text-sm font-bold text-slate-600 uppercase tracking-wide mb-3">
           Remarks
         </h3>
