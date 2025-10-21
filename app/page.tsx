@@ -408,9 +408,9 @@ export default function Page() {
                 <div className=" from-slate-50 to-slate-100 rounded-lg p-4 border border-slate-200">
                   <div className="text-4xl font-bold text-slate-700">
                     {(
-                      ((routeToPickup?.distance ?? 0) * 0.621371 ?? 0) +
-                      ((routeToDropoff?.distance ?? 0) * 0.621371 ?? 0)
-                    ).toFixed(2) ?? 0}
+                      (routeToPickup?.distance ?? 0) * 0.621371 +
+                      (routeToDropoff?.distance ?? 0) * 0.621371
+                    ).toFixed(2)}
                   </div>
                   <div className="text-xs text-slate-600 mt-1">
                     miles driven
